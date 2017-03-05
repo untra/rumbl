@@ -6,10 +6,6 @@
 <% end %>
 <%= form_for @changeset, user_path(@conn, :create), fn f -> %>
 <div class="form-group">
-  <%= text_input f, :name, placeholder: "name", class: "form-control" %>
-  <%= error_tag f, :name %>
-</div>
-<div class="form-group">
   <%= text_input f, :username, placeholder: "username", class: "form-control" %>
   <%= error_tag f, :username %>
 </div>
